@@ -28,4 +28,11 @@ body {
     background-color: var(--color-space);
     font-family: var(--font-body);
     color: var(--color-text);
+
+        /* === NEW PARALLAX STYLES === */
+    /* Make sure to use a high-resolution image for the best effect */
+    background-image: url('../../assets/images/nebula-background.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Parallax Magic*/
 }

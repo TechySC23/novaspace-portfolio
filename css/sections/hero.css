@@ -10,13 +10,6 @@
     /* Sizing: Make the section take up the full viewport height */
     min-height: 100vh;
     
-    /* Background: Set the base color and placeholder for your image */
-    background-color: var(--color-space); /* Fallback color */
-    /* TODO: Uncomment this line when you add your nebula image */
-    /* background-image: url('../../assets/images/nebula-background.jpg'); */
-    background-size: cover;
-    background-position: center;
-
     /* Typography */
     text-align: center;
     color: var(--color-text);

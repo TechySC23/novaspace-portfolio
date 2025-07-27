@@ -5,10 +5,10 @@
 :root {
     /* Color Palette */
     --color-space: #0D1117;
-    --color-primary: #007FFF;   /* Azure Radiance */
-    --color-accent: #33B1FF;    /* Cyan Flare */
-    --color-text: #E6F1FF;      /* Starlight Text */
-    --color-glass: rgba(255, 255, 255, 0.1);
+    --color-primary: #0096FF;   /* Electric Azure */
+    --color-accent: #70D7FF;    /* Supernova Cyan */
+    --color-text: #FFFFFF;      /* Star White */
+    --color-glass: rgba(13, 17, 23, 0.6); /* Glassmorphism Background */
 
     /* Font Families */
     --font-heading: 'Plus Jakarta Sans', sans-serif;
@@ -28,6 +28,7 @@ body {
     background-color: var(--color-space);
     font-family: var(--font-body);
     color: var(--color-text);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
         /* === NEW PARALLAX STYLES === */
     /* Make sure to use a high-resolution image for the best effect */

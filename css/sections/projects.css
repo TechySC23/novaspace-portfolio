@@ -108,12 +108,13 @@
 }
 
 .project-tags li {
-    background-color: rgba(0, 127, 255, 0.2);
+    background-color: rgba(0, 127, 255, 0.3);
     color: var(--color-accent);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
+    
 }
 
 .project-links {

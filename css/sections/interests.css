@@ -76,7 +76,7 @@
     height: 44px; /* A good size for these detailed icons */
     width: auto;
     /* Invert the color of the SVG to match our text color */
-    filter: invert(94%) sepia(13%) saturate(143%) hue-rotate(187deg) brightness(116%) contrast(92%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .interest-item span {

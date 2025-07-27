@@ -43,7 +43,7 @@
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
 
     /* Animation Setup */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .skill-card:hover {
@@ -59,4 +59,16 @@
     font-family: var(--font-body);
     font-weight: 500;
     color: var(--color-text);
+}
+
+/* This is the new highlighted state */
+.skill-card.highlighted {
+    background-color: rgba(0, 127, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 127, 255, 0.4);
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Optional: Fade out non-highlighted skills to add focus */
+.skills-grid.is-highlighting .skill-card:not(.highlighted) {
+    opacity: 0.5;
 }

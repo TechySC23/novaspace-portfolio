@@ -34,32 +34,59 @@ document.addEventListener("DOMContentLoaded", () => {
 		{
 			threshold: 0.1, // Trigger when 10% of the element is visible
 		},
-  );
-  
-    // ===== 4. Aurora Hover Effect on Cards =====
-    const cards = document.querySelectorAll('.project-card, .skill-card, .contact-card');
+	);
 
-    cards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            // Get the position of the card relative to the viewport
-            const rect = card.getBoundingClientRect();
-            
-            // Calculate the mouse position relative to the card's top-left corner
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+	// ===== 4. Aurora Hover Effect on Cards =====
+	const cards = document.querySelectorAll(".project-card, .skill-card, .contact-card");
 
-            // Set the CSS custom properties on the card element
-            card.style.setProperty('--mouse-x', `${x}px`);
-            card.style.setProperty('--mouse-y', `${y}px`);
-        });
+	cards.forEach((card) => {
+		card.addEventListener("mousemove", (e) => {
+			// Get the position of the card relative to the viewport
+			const rect = card.getBoundingClientRect();
 
-        // Reset the opacity when the mouse leaves the card
-        card.addEventListener('mouseleave', () => {
-            // While opacity is handled by CSS :hover, this can be useful for more complex effects
-        });
-    });
+			// Calculate the mouse position relative to the card's top-left corner
+			const x = e.clientX - rect.left;
+			const y = e.clientY - rect.top;
 
-});
+			// Set the CSS custom properties on the card element
+			card.style.setProperty("--mouse-x", `${x}px`);
+			card.style.setProperty("--mouse-y", `${y}px`);
+		});
+
+		// Reset the opacity when the mouse leaves the card
+		card.addEventListener("mouseleave", () => {
+			// While opacity is handled by CSS :hover, this can be useful for more complex effects
+		});
+	});
+
+	// ===== 5. Dynamic Skill Highlighting =====
+	const projectCards = document.querySelectorAll(".project-card");
+	const skillsGrid = document.querySelector(".skills-grid");
+
+	projectCards.forEach((card) => {
+		const skillTags = card.querySelectorAll(".project-tags li[data-skill]");
+		const requiredSkills = Array.from(skillTags).map((tag) => tag.dataset.skill);
+
+		card.addEventListener("mouseenter", () => {
+			skillsGrid.classList.add("is-highlighting");
+			requiredSkills.forEach((skill) => {
+				const skillCard = document.querySelector(`.skill-card[data-skill="${skill}"]`);
+				if (skillCard) {
+					skillCard.classList.add("highlighted");
+				}
+			});
+		});
+
+		card.addEventListener("mouseleave", () => {
+			skillsGrid.classList.remove("is-highlighting");
+			requiredSkills.forEach((skill) => {
+				const skillCard = document.querySelector(`.skill-card[data-skill="${skill}"]`);
+				if (skillCard) {
+					skillCard.classList.remove("highlighted");
+				}
+			});
+		});
+	});
 
 	// Select all elements you want to animate
 	const elementsToAnimate = document.querySelectorAll(

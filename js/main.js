@@ -34,7 +34,32 @@ document.addEventListener("DOMContentLoaded", () => {
 		{
 			threshold: 0.1, // Trigger when 10% of the element is visible
 		},
-	);
+  );
+  
+    // ===== 4. Aurora Hover Effect on Cards =====
+    const cards = document.querySelectorAll('.project-card, .skill-card, .contact-card');
+
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            // Get the position of the card relative to the viewport
+            const rect = card.getBoundingClientRect();
+            
+            // Calculate the mouse position relative to the card's top-left corner
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            // Set the CSS custom properties on the card element
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+
+        // Reset the opacity when the mouse leaves the card
+        card.addEventListener('mouseleave', () => {
+            // While opacity is handled by CSS :hover, this can be useful for more complex effects
+        });
+    });
+
+});
 
 	// Select all elements you want to animate
 	const elementsToAnimate = document.querySelectorAll(

@@ -47,7 +47,6 @@
 
 .contact-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 30px rgba(0, 127, 255, 0.3);
 }
 
 .contact-card img {

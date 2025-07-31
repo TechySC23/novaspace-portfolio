@@ -5,13 +5,15 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # It runs on every push to the 'main' branch.
+      - main # It runs on every push to the 'main' branch.
 
 # This section defines the jobs (the sequence of tasks) to be executed.
 jobs:
   # Job: Build and Deploy the website
   build-and-deploy:
-    runs-on: ubuntu-latest  # Use a standard Linux virtual machine
+    runs-on: ubuntu-latest # Use a standard Linux virtual machine
+    permissions:
+      contents: write
     steps:
       # Step 1: Check out the repository's code
       - name: Checkout 🛎️
@@ -22,5 +24,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # The branch the action should deploy to.
-          folder: .         # The folder the action should deploy. '.' means the entire repo.
+          branch: gh-pages # The branch the action should deploy to.
+          folder: . # The folder the action should deploy. '.' means the entire repo.

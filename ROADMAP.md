@@ -26,6 +26,7 @@ This first major phase is about transforming the project from a single page into
 ### Focus: `v0.0.2` — Core Page Styling
 
 * `v0.0.2-alpha-21`: **[SETUP]** Create the empty `css/pages.css` file and import it into `main.css`.
+  * **[FIX]** Adds the `permissions: contents: write` block to the deploy job, giving the action the necessary permissions to push the build artifacts to the gh-pages branch.
 * `v0.0.2-alpha-22`: **[STYLE]** Add the base `.page-container` and `.page-header` styles to `pages.css` to ensure consistent layout and spacing.
 * `v0.0.2-alpha-23`: **[STYLE]** Create and style the `.page-content` frosted glass container, reusing variables from `base.css`.
 * `v0.0.2-alpha-24`: **[STYLE]** Design and implement the `.callout-card` style for the StellarVer page to highlight key principles.

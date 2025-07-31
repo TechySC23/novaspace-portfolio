@@ -23,70 +23,72 @@ This first major phase is about transforming the project from a single page into
 * `v0.0.1-alpha-19`: **[SETUP]** Add HTML5 boilerplate to both new page files.
 * `v0.0.1-alpha-20`: **[SETUP]** Create and commit the `deploy.yml` GitHub Actions workflow for automated deployment.
 
-### Focus: `v0.0.2` — Core Page Styling
+### Focus: `v0.0.2` — Core Page Styling & CI/CD Refinement
 
-* `v0.0.2-alpha-21`: **[FIX] & [SETUP]** Grant write permissions to the deployment workflow and create `pages.css`.
-* `v0.0.2-alpha-22`: **[STYLE]** Add the base `.page-container` and `.page-header` styles to `pages.css` to ensure consistent layout and spacing.
-* `v0.0.2-alpha-23`: **[STYLE]** Create and style the `.page-content` frosted glass container, reusing variables from `base.css`.
-* `v0.0.2-alpha-24`: **[STYLE]** Design and implement the `.callout-card` style for the StellarVer page to highlight key principles.
-* `v0.0.2-beta-25`: **[STATE CHANGE]** The core page architecture is now stable. The project is now considered to be in a `beta` state, focusing on content and refinement.
-* `v0.0.2-beta-26`: **[FIX]** Adjust margins on `.page-header` to improve visual balance with the main navigation bar.
+* `v0.0.2-alpha-21`: **[REFACTOR] & [CHORE]** Adopted the official GitHub Pages deployment workflow (`static.yml`) and removed the redundant `deploy.yml`.
+* `v0.0.2-alpha-22`: **[DOCS]** Update and correct the `ROADMAP.md` to reflect the CI/CD refactor and realign future build tasks.
+* `v0.0.2-alpha-23`: **[SETUP]** Create the empty `css/pages.css` file and import it into `main.css`.
+* `v0.0.2-alpha-24`: **[STYLE]** Add the base `.page-container` and `.page-header` styles to `pages.css`.
+* `v0.0.2-alpha-25`: **[STYLE]** Create and style the `.page-content` frosted glass container.
+* `v0.0.2-alpha-26`: **[STYLE]** Design and implement the `.callout-card` style for the StellarVer page.
+* `v0.0.2-beta-27`: **[STATE CHANGE]** The core page architecture is now stable. Project is now in a `beta` state.
+* `v0.0.2-beta-28`: **[FIX]** Adjust margins on `.page-header` to improve visual balance.
 
 ### Focus: `v0.0.3` — `stellarver.html` Content and Polish
 
-* `v0.0.3-beta-27`: **[CONTENT]** Add the full, humanistic text content for the StellarVer philosophy to `stellarver.html`.
-* `v0.0.3-beta-28`: **[STYLE]** Add custom styling for the `<code>` and `<pre>` tags on the page to make them fit the "Cosmic Acrylic" theme.
-* `v0.0.3-beta-29`: **[CONTENT]** Add the Creative Commons license section, including the text, logo, and links, to the `stellarver.html` footer.
-* `v0.0.3-beta-30`: **[STYLE]** Refine the styling of the license section to ensure clarity and readability.
-* `v0.0.3-rc.1-31`: **[STATE CHANGE]** The `stellarver.html` page is now content-complete and considered a Release Candidate.
-* `v0.0.3-rc.1-32`: **[FIX]** Perform a full proofread of the page and correct several typos in the text.
+* `v0.0.3-beta-29`: **[CONTENT]** Add the full, humanistic text content for the StellarVer philosophy to `stellarver.html`.
+* `v0.0.3-beta-30`: **[STYLE]** Add custom styling for the `<code>` and `<pre>` tags on the page to make them fit the "Cosmic Acrylic" theme.
+* `v0.0.3-beta-31`: **[CONTENT]** Add the Creative Commons license section, including the text, logo, and links, to the `stellarver.html` footer.
+* `v0.0.3-beta-32`: **[STYLE]** Refine the styling of the license section to ensure clarity and readability.
+* `v0.0.3-rc.1-33`: **[STATE CHANGE]** The `stellarver.html` page is now content-complete and considered a Release Candidate.
+* `v0.0.3-rc.1-34`: **[FIX]** Perform a full proofread of the page and correct several typos in the text.
 
 ### Focus: `v0.0.4` — `aboutme.html` Content and Polish
 
-* `v0.0.4-rc.1-33`: **[HTML]** Structure `aboutme.html` with a two-column layout for a personal photo and a narrative section.
-* `v0.0.4-rc.1-34`: **[STYLE]** Implement the responsive two-column layout in `pages.css`.
-* `v0.0.4-rc.1-35`: **[CONTENT]** Add placeholder content for the narrative and a placeholder for the profile image.
-* `v0.0.4-rc.1-36`: **[CONTENT]** Add a placeholder image with proper aspect ratio styling.
+* `v0.0.4-rc.1-35`: **[HTML]** Structure `aboutme.html` with a two-column layout for a personal photo and a narrative section.
+* `v0.0.4-rc.1-36`: **[STYLE]** Implement the responsive two-column layout in `pages.css`.
+* `v0.0.4-rc.1-37`: **[CONTENT]** Add placeholder content for the narrative and a placeholder for the profile image.
+* `v0.0.4-rc.1-38`: **[CONTENT]** Add a placeholder image with proper aspect ratio styling.
 
 ### Focus: `v0.0.5` — Navigation & Finalization
 
-* `v0.0.5-rc.2-37`: **[STATE CHANGE]** The entire project is approaching its first major milestone.
-* `v0.0.5-rc.2-38`: **[REFACTOR]** Update navigation links across all three HTML files.
-* `v0.0.5-rc.2-39`: **[TEST]** Perform a thorough manual test of all navigation.
-* `v0.0.5-rc.2-40`: **[FIX]** Correct the active link styling for the new pages.
+* `v0.0.5-rc.2-39`: **[STATE CHANGE]** The entire project is approaching its first major milestone.
+* `v0.0.5-rc.2-40`: **[REFACTOR]** Update navigation links across all three HTML files.
+* `v0.0.5-rc.2-41`: **[TEST]** Perform a thorough manual test of all navigation.
+* `v0.0.5-rc.2-42`: **[FIX]** Correct the active link styling for the new pages.
 
 ### Focus: `v0.0.6` — `aboutme.html` Content Finalization
 
 * This focus is all about bringing the "About Me" page to life with real content, transforming it from a wireframe into a personal introduction.
-* `v0.0.6-rc.2-41`: **[CONTENT]** Write and commit the final, humanistic narrative for the `aboutme.html` page.
-* `v0.0.6-rc.2-42`: **[ASSET]** Source, optimize, and add the actual profile photo, replacing the placeholder.
-* `v0.0.6-rc.2-43`: **[FIX]** Adjust typography and spacing within the `aboutme.html` narrative for optimal readability.
+* `v0.0.6-rc.2-43`: **[CONTENT]** Write and commit the final, humanistic narrative for the `aboutme.html` page.
+* `v0.0.6-rc.2-44`: **[ASSET]** Source, optimize, and add the actual profile photo, replacing the placeholder.
+* `v0.0.6-rc.2-45`: **[FIX]** Adjust typography and spacing within the `aboutme.html` narrative for optimal readability.
 
 ### Focus: `v0.0.7` — SEO & Metadata
 
 * This focus treats search engine and social media presence as a first-class feature, ensuring the site is discoverable and shares beautifully.
-* `v0.0.7-rc.2-44`: **[META]** Add meaningful `<title>` and `<meta name="description">` tags to all three HTML pages.
-* `v0.0.7-rc.2-45`: **[META]** Implement Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`) across all pages for rich link previews on social platforms.
-* `v0.0.7-rc.2-46`: **[ASSET]** Design and create a high-quality `og-image.jpg` to be used for the social media preview image.
+* `v0.0.7-rc.2-46`: **[META]** Add meaningful `<title>` and `<meta name="description">` tags to all three HTML pages.
+* `v0.0.7-rc.2-47`: **[META]** Implement Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`) across all pages for rich link previews on social platforms.
+* `v0.0.7-rc.2-48`: **[ASSET]** Design and create a high-quality `og-image.jpg` to be used for the social media preview image.
 
 ### Focus: `v0.0.8` — Accessibility Overhaul (A11y)
 
 * This focus is dedicated to a thorough review of the site's accessibility, ensuring it is usable and welcoming to everyone.
-* `v0.0.8-rc.2-47`: **[A11Y]** Review and add descriptive `alt` text to every `<img>` tag that is not purely decorative.
-* `v0.0.8-rc.2-48`: **[A11Y]** Add appropriate `aria-label` attributes to icon-only links or buttons to provide context for screen readers.
-* `v0.0.8-rc.2-49`: **[A11Y]** Test and verify that the entire site, including the navigation and all interactive elements, is fully navigable using only the keyboard.
-* `v0.0.8-rc.2-50`: **[A11Y]** Run a Lighthouse accessibility audit and address any automatically-detected issues.
+* `v0.0.8-rc.2-49`: **[A11Y]** Review and add descriptive `alt` text to every `<img>` tag that is not purely decorative.
+* `v0.0.8-rc.2-50`: **[A11Y]** Add appropriate `aria-label` attributes to icon-only links or buttons to provide context for screen readers.
+* `v0.0.8-rc.2-51`: **[A11Y]** Test and verify that the entire site, including the navigation and all interactive elements, is fully navigable using only the keyboard.
+* `v0.0.8-rc.2-52`: **[A11Y]** Run a Lighthouse accessibility audit and address any automatically-detected issues.
 
 ### Focus: `v0.0.9` — Final Polish & Pre-Launch Checks
 
 * This is the final checklist before the milestone release. It covers the small but vital details that create a professional final product.
-* `v0.0.9-rc.3-51`: **[STATE CHANGE]** The project is now in its final Release Candidate stage before the Foundation milestone.
-* `v0.0.9-rc.3-52`: **[ASSET]** Create and implement a comprehensive `favicon` set (including `favicon.ico`, `apple-touch-icon.png`, and manifest icons) for all devices and platforms.
-* `v0.0.9-rc.3-53`: **[TEST]** Perform a final cross-browser compatibility check on the latest versions of Chrome, Firefox, and Safari.
-* `v0.0.9-rc.3-54`: **[CLEANUP]** Run a code linter (like Prettier) across the entire HTML, CSS, and JS codebase to ensure consistent formatting.
-* `v0.0.9-rc.3-55`: **[DOCS]** Update the main `README.md` to reflect the new features and a link to the live deployment.
+* `v0.0.9-rc.3-53`: **[STATE CHANGE]** The project is now in its final Release Candidate stage before the Foundation milestone.
+* `v0.0.9-rc.3-54`: **[ASSET]** Create and implement a comprehensive `favicon` set (including `favicon.ico`, `apple-touch-icon.png`, and manifest icons) for all devices and platforms.
+* `v0.0.9-rc.3-55`: **[TEST]** Perform a final cross-browser compatibility check on the latest versions of Chrome, Firefox, and Safari.
+* `v0.0.9-rc.3-56`: **[CLEANUP]** Run a code linter (like Prettier) across the entire HTML, CSS, and JS codebase to ensure consistent formatting.
+* `v0.0.9-rc.3-57`: **[DOCS]** Update the main `README.md` to reflect the new features and a link to the live deployment.
 
-### **`v0.1.0-stable-56`: The "Foundation" Milestone Release**
+### **`v0.1.0-stable-58`: The "Foundation" Milestone Release**
 
 * The portfolio is now a stable, accessible, SEO-friendly, multi-page website with a complete narrative. This marks the end of the initial development phase and the readiness for public announcement.
 

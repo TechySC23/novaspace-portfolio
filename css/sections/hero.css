@@ -1,0 +1,31 @@
+/* ========================================= */
+/* HERO SECTION STYLES                       */
+/* ========================================= */
+
+#hero {
+    /* Layout: Use Grid to perfectly center content both vertically and horizontally */
+    display: grid;
+    place-items: center;
+
+    /* Sizing: Make the section take up the full viewport height */
+    min-height: 100vh;
+    
+    /* Typography */
+    text-align: center;
+    color: var(--color-text);
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 10vw, 6rem); /* Responsive font size */
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-family: var(--font-body);
+    font-size: clamp(1.125rem, 4vw, 1.5rem); /* Responsive font size */
+    font-weight: 400;
+    color: var(--color-text);
+}

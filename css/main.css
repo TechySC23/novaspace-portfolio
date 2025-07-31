@@ -1,0 +1,56 @@
+@import url('sections/hero.css');
+@import url('sections/skills.css'); 
+@import url('sections/projects.css');
+@import url('sections/interests.css');
+@import url('sections/contact.css');
+@import url('sections/footer.css');
+@import url('sections/header.css'); 
+
+
+/* ========================================= */
+/* ANIMATION UTILITY CLASSES                 */
+/* ========================================= */
+
+/* Add this to all elements we want to animate */
+.skill-card, .project-card, .interest-item, .contact-card, .narrative-card, #skills .section-title, #projects .section-title, #interests .section-title, #contact .section-title {
+    opacity: 0;
+    transform: translateY(30px);
+    /* This cubic-bezier is a "easeOutQuart" curve, as you requested */
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* The .visible class is added by JS to trigger the animation */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Aurora Card Utility Styles */
+.aurora-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.aurora-card::before {
+    content: '';
+    position: absolute;
+    left: var(--mouse-x, 0);
+    top: var(--mouse-y, 0);
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, var(--color-primary) 0%, rgba(0, 127, 255, 0) 50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.aurora-card:hover::before {
+    opacity: 0.15;
+}
+
+/* Make sure content is on top */
+.aurora-card > * {
+    position: relative;
+    z-index: 1;
+}

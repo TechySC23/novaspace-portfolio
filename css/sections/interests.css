@@ -1,0 +1,87 @@
+/* ========================================= */
+/* INTERESTS SECTION STYLES                  */
+/* ========================================= */
+
+#interests {
+    padding: 6rem 2rem;
+}
+
+.interests-container {
+    max-width: 900px; /* A bit narrower for readability */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Part 1: Narrative Card */
+.narrative-card {
+    background-color: var(--color-glass);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.narrative-card h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.narrative-card p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+.narrative-card em {
+    font-style: italic;
+    color: var(--color-accent); /* Make emphasized text pop */
+}
+
+/* Part 2: Grid of Interests */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.interest-item {
+    /* We can reuse the skill-card style, but we define it here for clarity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    
+    background-color: var(--color-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly brighten on hover */
+}
+
+.interest-item img {
+    height: 44px; /* A good size for these detailed icons */
+    width: auto;
+    /* Invert the color of the SVG to match our text color */
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.interest-item span {
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--color-text);
+    text-align: center;
+}

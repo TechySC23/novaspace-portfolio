@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NovaSpace's Portfolio</title>
+
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<!-- Add this right after the <body> tag -->
+		<header id="main-header">
+			<nav class="main-nav">
+				<a href="#hero" class="logo">NovaSpace</a>
+				<ul class="nav-links">
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#interests">Interests</a></li>
+					<li><a href="#contact" class="btn btn-primary">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- HERO SECTION -->
+			<section id="hero">
+				<div class="hero-content">
+					<h1>NovaSpace</h1>
+					<h2>Web Developer & Graphic Designer</h2>
+				</div>
+			</section>
+
+			<!-- Add this right after the hero section -->
+
+			<!-- MY SKILLS SECTION -->
+			<section id="skills">
+				<div class="skills-container">
+					<h2 class="section-title">My Digital Toolkit</h2>
+					<div class="skills-grid">
+						<!-- Skill Card 1: HTML -->
+						<div class="skill-card aurora-card" data-skill="html">
+							<img src="assets/icons/html.svg" alt="HTML5 icon" />
+							<span>HTML5</span>
+						</div>
+						<!-- Skill Card 2: CSS -->
+						<div class="skill-card aurora-card" data-skill="css">
+							<img src="assets/icons/css.svg" alt="CSS3 icon" />
+							<span>CSS3</span>
+						</div>
+						<!-- Skill Card 3: JavaScript -->
+						<div class="skill-card aurora-card" data-skill="javascript">
+							<img src="assets/icons/js.svg" alt="JavaScript icon" />
+							<span>JavaScript</span>
+						</div>
+						<!-- Skill Card 4: Python -->
+						<div class="skill-card aurora-card" data-skill="python">
+							<img src="assets/icons/py.svg" alt="Python icon" />
+							<span>Python</span>
+						</div>
+						<!-- Skill Card 5: Java -->
+						<div class="skill-card aurora-card" data-skill="java">
+							<img src="assets/icons/java.svg" alt="Java icon" />
+							<span>Java</span>
+						</div>
+						<!-- Skill Card 6: C++ -->
+						<div class="skill-card aurora-card" data-skill="cplusplus">
+							<img src="assets/icons/cpp.svg" alt="C++ icon" />
+							<span>C++</span>
+						</div>
+						<!-- Skill Card 7: C# -->
+						<div class="skill-card aurora-card" data-skill="xaml">
+							<img src="assets/icons/csharp.svg" alt="C# icon" />
+							<span>XAML</span>
+						</div>
+						<!-- Skill Card 8: Git -->
+						<div class="skill-card aurora-card" data-skill="git">
+							<img src="assets/icons/git.svg" alt="Git icon" />
+							<span>Git</span>
+						</div>
+						<div class="skill-card aurora-card" data-skill="markdown">
+							<img src="assets/icons/md.svg" alt="Markdown icon" />
+							<span>Markdown</span>
+					</div>
+				</div>
+			</section>
+			<!-- Add this right after the skills section -->
+
+			<!-- PROJECTS SECTION -->
+			<section id="projects">
+				<div class="projects-container">
+					<h2 class="section-title">My Creations</h2>
+					<div class="projects-grid">
+						<!-- Project Card 1: LocalRepo -->
+						<article class="project-card aurora-card">
+							<img src="assets/images/localrepo.png" alt="LocalRepo project screenshot" class="project-image" />
+							<div class="project-content">
+								<h3>LocalRepo: A Code Snippet Hub</h3>
+								<p>
+									An educational website aimed at teaching front-end development by collecting and showcasing useful HTML and CSS code snippets from
+									across the web.
+								</p>
+								<ul class="project-tags">
+									<li data-skill="html">HTML</li>
+									<li data-skill="css">CSS</li>
+									<li>Education</li>
+								</ul>
+								<div class="project-links">
+									<a href="https://techysc23.github.io/LocalRepo/" target="_blank" class="btn btn-primary">Live Demo</a>
+									<a href="https://github.com/TechySC23/LocalRepo" target="_blank" class="btn btn-secondary">GitHub</a>
+								</div>
+							</div>
+						</article>
+
+						<!-- Project Card 2: Fluent11 Dark -->
+						<article class="project-card aurora-card">
+							<img src="assets/images/Fluent11 Dark.png" alt="Fluent11 Dark theme screenshot" class="project-image" />
+							<div class="project-content">
+								<h3>Fluent11 Dark Theme</h3>
+								<p>A sleek, dark theme for the Flow Launcher productivity app, focusing on clean aesthetics and readability.</p>
+								<ul class="project-tags">
+									<li>UI/UX Design</li>
+									<li data-skill="xaml">XAML</li>
+									<li>Flow Launcher</li>
+								</ul>
+								<div class="project-links">
+									<a href="https://github.com/TechySC23/Fluent11Dark" target="_blank" class="btn btn-secondary">View on GitHub</a>
+								</div>
+							</div>
+						</article>
+
+						<!-- Project Card 3: SpeedShock -->
+						<article class="project-card aurora-card">
+							<img src="assets/images/SpeedShock.svg" alt="SpeedShock hardware diagram" class="project-image" />
+							<div class="project-content">
+								<h3>SpeedShock Initiative</h3>
+								<p>An Arduino-based road safety system designed to prevent accidents by detecting vehicle speed and road conditions.</p>
+								<ul class="project-tags">
+									<li>Arduino</li>
+									<li data-skill="cplusplus">C++</li>
+									<li>Sensors</li>
+								</ul>
+								<div class="project-links">
+									<a href="https://github.com/TechySC23/SpeedShock" target="_blank" class="btn btn-secondary">View on GitHub</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- MY INTERESTS SECTION -->
+			<section id="interests">
+				<div class="interests-container">
+					<!-- Part 1: Narrative -->
+					<div class="narrative-card">
+						<h2>Beyond the Code</h2>
+						<p>
+							I'm fascinated by technology because I've always wanted to know how things <em>really</em> work. This curiosity goes from big-picture
+							topics like aviation and cosmology, right down to the microscopic level of how a GPU or semiconductor functions. I enjoy digging into
+							complex systems, whether that's the latest in AI and machine learning or the fundamentals of geopolitics. Outside of tech, I'm creative
+							with graphic design and audio editing, and I'm a big believer in the power of small, consistent improvements—a key idea from my favorite
+							book, <em>Atomic Habits</em>.
+						</p>
+					</div>
+
+					<!-- Part 2: Grid of Interests -->
+					<div class="interests-grid">
+						<!-- Interest 1 -->
+						<div class="interest-item">
+							<img src="assets/icons/icon-aerospace.svg" alt="Aerospace icon" />
+							<span>Aerospace & Aviation</span>
+						</div>
+						<!-- Interest 2 -->
+						<div class="interest-item">
+							<img src="assets/icons/icon-cosmology.svg" alt="Cosmology icon" />
+							<span>Cosmology</span>
+						</div>
+						<!-- Interest 3 -->
+						<div class="interest-item">
+							<img src="assets/icons/icon-architecture.svg" alt="Computer Architecture icon" />
+							<span>Computer Architecture</span>
+						</div>
+						<!-- Interest 4 -->
+						<div class="interest-item">
+							<img src="assets/icons/icon-ai.svg" alt="AI & Machine Learning icon" />
+							<span>AI & Machine Learning</span>
+						</div>
+						<!-- Interest 5 -->
+						<div class="interest-item">
+							<img src="assets/icons/icon-design.svg" alt="Digital Design icon" />
+							<span>Digital Design</span>
+						</div>
+						<!-- Interest 6 -->
+						<div class="interest-item">
+							<img src="assets/icons/icon-geopolitics.svg" alt="Geopolitics icon" />
+							<span>Geopolitics</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACT SECTION -->
+			<section id="contact">
+				<div class="contact-container">
+					<h2 class="section-title">Get In Touch</h2>
+					<p class="contact-subtitle">
+						I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out.
+					</p>
+					<div class="contact-links">
+						<!-- Email Link -->
+						<a href="mailto:your.email@example.com" class="contact-card">
+							<img src="assets/icons/icon-email.svg" alt="Email icon" />
+							<h3>Email Me</h3>
+							<span>your.email@example.com</span>
+							<!-- TODO: Replace with your actual email address -->
+						</a>
+
+						<!-- GitHub Link -->
+						<a href="https://github.com/TechySC23" target="_blank" class="contact-card">
+							<img src="assets/icons/icon-github.svg" alt="GitHub icon" />
+							<h3>GitHub</h3>
+							<span>@TechySC23</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Add this after the closing </main> tag -->
+		<footer id="footer">
+			<p>&copy; 2025 NovaSpace. All Rights Reserved.</p>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>

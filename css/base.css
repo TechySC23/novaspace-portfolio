@@ -3,37 +3,37 @@
 
 /* Define the design tokens (colors and fonts) as CSS Variables */
 :root {
-    /* Color Palette */
-    --color-space: #0D1117;
-    --color-primary: #0096FF;   /* Electric Azure */
-    --color-accent: #70D7FF;    /* Supernova Cyan */
-    --color-text: #FFFFFF;      /* Star White */
-    --color-glass: rgba(13, 17, 23, 0.6); /* Glassmorphism Background */
+		/* Color Palette */
+		--color-space: #0D1117;
+		--color-primary: #0096FF;   /* Electric Azure */
+		--color-accent: #70D7FF;    /* Supernova Cyan */
+		--color-text: #FFFFFF;      /* Star White */
+		--color-glass: rgba(13, 17, 23, 0.6); /* Glassmorphism Background */
 
-    /* Font Families */
-    --font-heading: 'Plus Jakarta Sans', sans-serif;
-    --font-body: 'Poppins', sans-serif;
+		/* Font Families */
+		--font-heading: 'Plus Jakarta Sans', sans-serif;
+		--font-body: 'Poppins', sans-serif;
 }
 
 /* A simple CSS Reset */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
 }
 
 body {
-    background-color: var(--color-space);
-    font-family: var(--font-body);
-    color: var(--color-text);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+		background-color: var(--color-space);
+		font-family: var(--font-body);
+		color: var(--color-text);
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
-        /* === NEW PARALLAX STYLES === */
-    /* Make sure to use a high-resolution image for the best effect */
-    background-image: url('/assets/images/background-main.png');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center center; /* Centers the image */
-    background-attachment: fixed; /* Parallax Magic*/
+				/* === NEW PARALLAX STYLES === */
+		/* Make sure to use a high-resolution image for the best effect */
+		background-image: url('/assets/images/background-main.png');
+		background-size: cover; /* Ensures the image covers the entire background */
+		background-position: center center; /* Centers the image */
+		background-attachment: fixed; /* Parallax Magic*/
 }

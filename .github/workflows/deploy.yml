@@ -1,0 +1,26 @@
+# Name of our GitHub Actions Workflow
+name: Deploy to GitHub Pages
+
+# This section defines WHEN the workflow will run.
+on:
+  push:
+    branches:
+      - main  # It runs on every push to the 'main' branch.
+
+# This section defines the jobs (the sequence of tasks) to be executed.
+jobs:
+  # Job: Build and Deploy the website
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Use a standard Linux virtual machine
+    steps:
+      # Step 1: Check out the repository's code
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      # Step 2: Deploy the static site to GitHub Pages
+      # This action handles all the complex git work for us.
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # The branch the action should deploy to.
+          folder: .         # The folder the action should deploy. '.' means the entire repo.
